@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="691.0" style="-fx-background-color: #ff9aa2;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.insurance.UpdateRecord">
+    <children>
+        <TextField fx:id="serialno" layoutX="26.0" layoutY="110.0" prefHeight="33.0" prefWidth="156.0" promptText=" SerialNo*" />
+        <Label fx:id="updatetext" alignment="CENTER" layoutX="-1.0" layoutY="50.0" prefHeight="20.0" prefWidth="691.0" text="Update Record Of Virat Kohli">
+            <font>
+                <Font name="Berlin Sans FB" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="surname" layoutX="195.0" layoutY="110.0" prefHeight="33.0" prefWidth="139.0" promptText="Surname*" />
+        <TextField fx:id="firstName" layoutX="345.0" layoutY="110.0" prefHeight="33.0" prefWidth="149.0" promptText="First Name*" />
+        <TextField fx:id="lastName" layoutX="507.0" layoutY="110.0" prefHeight="35.0" prefWidth="156.0" promptText="Last Name" />
+        <Button fx:id="updateButton" layoutX="271.0" layoutY="426.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="139.0" style="-fx-alignment: #FF2695;" text="Update Record">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="5.0" layoutY="163.0" prefHeight="33.0" prefWidth="122.0" text="Insurane Type* :">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font></Label>
+        <RadioButton fx:id="lic" layoutX="132.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" selected="true" text="LIC">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="iType" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="generalInsurance" layoutX="183.0" layoutY="167.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="149.0" text="General Insurance" toggleGroup="$iType">
+            <font>
+                <Font size="14.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="mediclaim" layoutX="328.0" layoutY="160.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="97.0" text="Mediclaim" toggleGroup="$iType">
+            <font>
+                <Font size="14.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="vehicle" layoutX="425.0" layoutY="159.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" text="Vehicle" toggleGroup="$iType">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="other" layoutX="506.0" layoutY="154.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="107.0" text="other" toggleGroup="$iType">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <TextField fx:id="companyName" layoutX="14.0" layoutY="230.0" prefHeight="33.0" prefWidth="149.0" promptText="company name*" />
+        <TextField fx:id="premium" layoutX="175.0" layoutY="230.0" prefHeight="33.0" prefWidth="149.0" promptText="Premium*" />
+        <Label layoutX="26.0" layoutY="283.0" prefHeight="33.0" prefWidth="84.0" text="If Vehicle :">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="vehicleNo" layoutX="119.0" layoutY="287.0" prefHeight="33.0" prefWidth="156.0" promptText="Vehicle Number" />
+        <Label layoutX="283.0" layoutY="291.0" prefHeight="25.0" prefWidth="53.0" text="Type :">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="fourWheeler" layoutX="438.0" layoutY="293.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="139.0" text="4 wheeler">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="vType" />
+            </toggleGroup>
+        </RadioButton>
+        <Label layoutX="11.0" layoutY="340.0" prefHeight="25.0" prefWidth="84.0" text="From Date:">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="toDate" layoutX="94.0" layoutY="340.0" prefHeight="33.0" prefWidth="181.0" promptText="starting date*" />
+        <Label layoutX="293.0" layoutY="344.0" prefHeight="20.0" prefWidth="69.0" text="To Date:">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="fromDate" layoutX="362.0" layoutY="342.0" prefHeight="33.0" prefWidth="181.0" promptText="ending date*" />
+        <RadioButton fx:id="twoWheeler" layoutX="336.0" layoutY="295.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="91.0" selected="true" text="2 wheeler" toggleGroup="$vType">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <Button fx:id="showRecordButton" layoutX="532.0" layoutY="461.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="122.0" text="Show Records">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <TextField fx:id="policyNo" layoutX="345.0" layoutY="230.0" prefHeight="33.0" prefWidth="156.0" promptText="Policy No*" />
+        <TextField fx:id="phone" layoutX="519.0" layoutY="227.0" prefHeight="35.0" prefWidth="149.0" promptText="Phone" />
+        <Label layoutX="40.0" layoutY="477.0" prefHeight="25.0" prefWidth="312.0" text="All the fields marked with * are compulosary." textFill="#fc0101">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="remarks" layoutX="8.0" layoutY="383.0" prefHeight="35.0" prefWidth="218.0" promptText="Remarks" />
+      <Label fx:id="recorddate" layoutX="518.0" layoutY="14.0" opacity="0.0" prefHeight="17.0" prefWidth="107.0" text="Label" />
+    </children>
+</AnchorPane>

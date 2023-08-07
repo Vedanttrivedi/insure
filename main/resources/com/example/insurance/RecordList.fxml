@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="991.0" style="-fx-background-color: #ff9aa2;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.insurance.RecordListController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="40.0" prefHeight="28.0" prefWidth="916.0" text="All Previous Records" textAlignment="CENTER" textFill="#bd1a1a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="11.0" layoutY="88.0" prefHeight="364.0" prefWidth="874.0">
+        <columns>
+          <TableColumn fx:id="serialno" prefWidth="75.0" text="Serialno" />
+          <TableColumn fx:id="name" prefWidth="135.0" text="Name" />
+            <TableColumn fx:id="insuranceT" prefWidth="70.0" text="Insurance" />
+            <TableColumn fx:id="company" prefWidth="75.0" text="Company" />
+            <TableColumn fx:id="vehicle" maxWidth="4000.0" prefWidth="45.0" text="Vehicle" />
+            <TableColumn fx:id="vehicleno" prefWidth="90.0" text="VehicleNo" />
+            <TableColumn fx:id="policyno" prefWidth="75.0" text="PolicyNo" />
+            <TableColumn fx:id="premium" prefWidth="75.0" text="Premium" />
+            <TableColumn fx:id="fromdate" prefWidth="77.0" text="fromDate" />
+            <TableColumn fx:id="todate" prefWidth="77.0" text="ToDate" />
+            <TableColumn fx:id="phone" prefWidth="75.0" text="phone" />
+            <TableColumn fx:id="detailed" text="Update" />
+            <TableColumn fx:id="print" prefWidth="60.0" text="Print" />
+            <TableColumn fx:id="delete" prefWidth="75.0" text="Delete" />
+        </columns>
+      </TableView>
+      <Line endX="100.0" layoutX="457.0" layoutY="68.0" startX="-100.0" />
+      <HBox layoutX="325.0" layoutY="474.0" prefHeight="45.0" prefWidth="461.0">
+         <children>
+            <Button fx:id="addrecord" mnemonicParsing="false" prefHeight="56.0" prefWidth="185.0" style="-fx-background-color: #FFFFFF;" text="Add Record">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="searchrecord" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="191.0" text="Search Record" textFill="#171717">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="263.0" text="Print MonthWise Record">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="31.0" layoutY="527.0" prefHeight="28.0" prefWidth="580.0" text="There is vertical scrollbar in bottom of table to see other details about record.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
